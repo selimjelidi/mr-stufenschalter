@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1082</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/* Soft Neumorphic Blue */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0  #F3F9FF,
+                                stop:1  #E3F0FA);
+    border: 1px solid #C9DDED;           /* base border */
+    border-top-color:    #FFFFFF;        /* highlight edge */
+    border-left-color:   #FFFFFF;
+    border-right-color:  #B3CFE6;        /* shadow edge */
+    border-bottom-color: #B3CFE6;
+    border-radius: 12px;
+    color: #21405A;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 18px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0  #FFFFFF,
+                                stop:1  #EAF4FD);
+}
+
+QPushButton:pressed {
+    /* invert edges for inset feel */
+    border-top-color:    #B3CFE6;
+    border-left-color:   #B3CFE6;
+    border-right-color:  #FFFFFF;
+    border-bottom-color: #FFFFFF;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0  #DBEAF6,
+                                stop:1  #CFE2F0);
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+
+QPushButton:disabled {
+    color: #93A9BC;
+    background: #ECF4FA;
+    border: 1px solid #D6E5F1;
+}
+
+QPushButton:focus {
+    border: 2px solid #9FCCF0;
+    padding: 9px 17px;
+}
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+    <item>
+     <widget class="QWidget" name="mainWidget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    background-color: rgb(232, 236, 236);
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="mainWidgetLayout" stretch=""/>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="footerWidget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="footerSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="arcDetectionBtn">
+         <property name="text">
+          <string>Arc Detection</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="shorCircuitDetectionBtn">
+         <property name="text">
+          <string>Short Circuit Detection</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
