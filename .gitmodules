@@ -1,0 +1,3 @@
+[submodule "mr-stufenschalter-uc"]
+	path = mr-stufenschalter-uc
+	url = git@github.com:selimjelidi/mr-stufenschalter-uc.git
